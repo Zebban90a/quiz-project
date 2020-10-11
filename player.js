@@ -75,7 +75,7 @@ class QuizGame {
     //
     /*for (let entry of entries) {
         this.quizes.push(new Quiz(entry));
-        
+        gdgdf
       }*/
       
       
