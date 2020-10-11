@@ -102,7 +102,8 @@ class QuizGame {
 
 }
     playerName () {
-        let player = document.getElementById('input')
+        let player = document.getElementById('namePlayer').value
+        return player;
     }
    
     checkScore () {
@@ -119,8 +120,11 @@ class QuizGame {
     }
     scoreBoard() {
         const quizScoreBoard = document.getElementById("quizScoreBoard");
+        const playerName = document.getElementById("playerName");
         let score = this.checkScore();
+        let player = this.playerName();
         quizScoreBoard.innerText = ("total score was " + score);
+        playerName.innerText = ("player: " + player)
 
     }
 
@@ -151,6 +155,7 @@ fetch(
         let Hide = document.getElementById('quiz');
         Hide.style.display = "none"
         game.scoreBoard();
+        
 
             
     }.bind(null, game));
