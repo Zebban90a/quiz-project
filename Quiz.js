@@ -28,7 +28,7 @@ class Quiz {
     getScore() {
       
       var score = this.checkBoxes
-      .map(this.combineCheckboxAndCorrectAnswer.bind(this)) //kombinera metoden com
+      .map(this.combineCheckboxAndCorrectAnswer.bind(this)) 
       .filter(this.filtercheckbox)
       .map(this.checkAnswer)
       .reduce((previousValue, currentValue) => previousValue + currentValue, 0); 

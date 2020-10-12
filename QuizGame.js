@@ -1,13 +1,6 @@
 class QuizGame {
     constructor(entries) {
       this.quizes = entries.map(entry => new Quiz(entry));
-      
-      
-      //
-      /*for (let entry of entries) {
-          this.quizes.push(new Quiz(entry));
-          gdgdf
-        }*/
         
         
     }
@@ -54,8 +47,8 @@ class QuizGame {
           const playerName = document.getElementById("playerName");
           let score = this.checkScore();
           let player = this.playerName();
-          quizScoreBoard.innerText = ("total score was " + score);
-          playerName.innerText = ("player: " + player)
+          quizScoreBoard.innerText = ("total score was : " + score);
+          playerName.innerText = ("player:  " + player)
           this.newGame();
   
       }
